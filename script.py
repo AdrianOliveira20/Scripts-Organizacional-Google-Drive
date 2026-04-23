@@ -48,12 +48,6 @@ def autenticar():
 def extrair_numero_e_ano(nome_arquivo):
     """
     Tenta extrair número e ano de lei a partir do nome do arquivo.
-    Suporta formatos como:
-      - Lei 1234 de 2021
-      - Lei_1234_2021
-      - 1234-2021
-      - Lei nº 1234/2021
-      - lei 1234_21  (ano com 2 dígitos → converte para 4)
     Retorna (numero, ano) como strings, ou (None, None) se não encontrado.
     """
     nome = nome_arquivo
